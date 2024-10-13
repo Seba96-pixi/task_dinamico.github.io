@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lista de Tareas</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <input type="text" id="new-task" placeholder="Añadir tarea">
+    <button onclick="addTask()">Añadir</button>
+
+    <table border="1" id="summary-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tarea</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="task-summary"></tbody>
+    </table>
+
+    <div>
+        <p>Total de tareas: <span id="total-tasks">0</span></p>
+        <p>Tareas realizadas: <span id="completed-tasks">0</span></p>
+    </div>
+
+    <!-- Enlazamos el archivo JS -->
+    <script src="./assets/js/script.js"></script>
+</body>
+<footer>
+    <p>Sebastian Jaque Acosta - Desafío Latam</p>
+</footer>
+</html>
+
+
